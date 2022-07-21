@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="module-6-challenge/module-6-challenge/style.css">
+    <title>Daniel's Weather App</title>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Daniel's Weather App</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" id="searchCity" placeholder="Search for a City" aria-label="Search">
+            <button class="btn btn-outline-success" id="searchBtn" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <header class="jumbotron bg-light">
+      <p id="currentDay" class="lead bg-light"></p>
+    </header>
+
+    <div class="cardMain col-8">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    
+    <nav style="float: left">
+      <div type="button" class="cardnash nshTemp" id="nashCard" style="width: 18rem;">
+        <img src="nashville-picture.jpeg" class="card-img-top" alt="Nashville-looking-cool">
+        <div class="card-body">
+          <p class="card-text">Nashville, TN</p>
+          <p id="nashTemp"></p>
+        </div>
+      </div>
+
+      <div type="button" class="cardatla" id="atlaCard" style="width: 18rem;">
+        <img src="atlanta-ga-picture.jpeg" class="card-img-top" alt="Nashville-looking-cool">
+        <div class="card-body">
+          <p class="card-text">Atlanta, GA</p>
+          <p id="atlaTemp"></p>
+
+        </div>
+      </div>
+
+      <div type="button" class="cardtamp" id="tampCard" style="width: 18rem;">
+        <img src="tampa-fl-image.jpeg" class="card-img-top" alt="Nashville-looking-cool">
+        <div class="card-body">
+          <p class="card-text">Tampa, FL</p>
+          <p id="tampTemp"></p>
+
+        </div>
+      </div>
+      </nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="module-6-challenge/module-6-challenge/script.js"></script>
+</body>
+</html>
